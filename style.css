@@ -35,11 +35,6 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-#todos-error {
-  color: rgb(184, 25, 25);
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .filtered-btn {
   display: flex;
@@ -49,7 +44,10 @@ body {
   border-radius: 5px;
   margin: 10px;
 }
-#sort,
+.filtered-hide {
+  display: none;
+}
+#sortBy,
 #clear,
 #filter {
   padding: 8px;
@@ -112,6 +110,7 @@ body {
 }
 .task-item {
   display: flex;
+  gap: 5px;
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.8);
@@ -135,12 +134,22 @@ body {
   background-color: #51b055;
   color: white;
   font-weight: bold;
-}
-
-#edit {
   cursor: pointer;
 }
+
 #delete {
   background-color: #2196f3;
   cursor: pointer;
+}
+#todos-error {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bg-sucsses {
+  color: green;
+}
+.bg-delete {
+  color: rgb(233, 5, 5);
 }
